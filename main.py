@@ -50,3 +50,8 @@ def on_generate_button_click():
 
     # Generate the image based on the input text
     generate_image_from_text(input_text)
+
+
+# Create the main tkinter window
+root = tk.Tk()
+root.title("GROUP 4 - TEXT TO HAND-WRITING FORMAT")
