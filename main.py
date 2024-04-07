@@ -42,3 +42,11 @@ def generate_image_from_text(text):
 
     except FileNotFoundError:
         print("Could not find the background image (bg.png)")
+
+
+def on_generate_button_click():
+    # Get the text from the entry widget
+    input_text = text_entry.get()
+
+    # Generate the image based on the input text
+    generate_image_from_text(input_text)
