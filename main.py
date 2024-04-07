@@ -66,3 +66,7 @@ text_entry.pack()
 # Button to trigger image generation
 generate_button = tk.Button(root, text="Generate Image", command=on_generate_button_click)
 generate_button.pack()
+
+
+# Run the main event loop
+root.mainloop()
