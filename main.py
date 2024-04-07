@@ -61,3 +61,8 @@ root.title("GROUP 4 - TEXT TO HAND-WRITING FORMAT")
 tk.Label(root, text="Enter Text:").pack()
 text_entry = tk.Entry(root, width=50)
 text_entry.pack()
+
+
+# Button to trigger image generation
+generate_button = tk.Button(root, text="Generate Image", command=on_generate_button_click)
+generate_button.pack()
