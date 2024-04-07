@@ -55,3 +55,9 @@ def on_generate_button_click():
 # Create the main tkinter window
 root = tk.Tk()
 root.title("GROUP 4 - TEXT TO HAND-WRITING FORMAT")
+
+
+# Label and entry widget for entering text
+tk.Label(root, text="Enter Text:").pack()
+text_entry = tk.Entry(root, width=50)
+text_entry.pack()
