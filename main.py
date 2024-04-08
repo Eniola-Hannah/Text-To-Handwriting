@@ -46,7 +46,7 @@ def generate_image_from_text(text):
 
 def on_generate_button_click():
     # Get the text from the entry widget
-    input_text = text_entry.get()
+    input_text = text_entry.get("1.0", "end-1c")
 
     # Generate the image based on the input text
     generate_image_from_text(input_text)
@@ -62,7 +62,7 @@ set_appearance_mode("light")
 
 # # Label and entry widget for entering text
 CTkLabel(root, text="Enter Text:", font=("Arial", 20)).pack(pady=10)
-text_entry = CTkEntry(root, width=300) 
+text_entry = CTkTextbox(root) 
 text_entry.pack(pady=20)
 
 
