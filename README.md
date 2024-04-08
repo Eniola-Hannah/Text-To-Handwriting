@@ -44,3 +44,13 @@ python main.py
 - Enter the text you want to convert.
 - Click "Convert Text" to generate the handwritten-style image.
 - The output image will be displayed and saved in the project directory.
+
+
+## Example
+
+Input:
+![Text Input](Images/text.png)
+
+Output:
+![Handwritten Output](Images/output.png)
+
