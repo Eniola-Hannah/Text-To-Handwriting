@@ -1,7 +1,7 @@
 from PIL import Image
-import sys
 import tkinter as tk
 from tkinter import filedialog
+from customtkinter import *
 
 
 def generate_image_from_text(text):
@@ -53,18 +53,21 @@ def on_generate_button_click():
 
 
 # Create the main tkinter window
-root = tk.Tk()
+# root = tk.Tk()
+root = CTk()
+root.geometry("500x400")
 root.title("GROUP 4 - TEXT TO HAND-WRITING FORMAT")
+set_appearance_mode("light")
 
 
-# Label and entry widget for entering text
-tk.Label(root, text="Enter Text:").pack()
-text_entry = tk.Entry(root, width=50)
-text_entry.pack()
+# # Label and entry widget for entering text
+CTkLabel(root, text="Enter Text:", font=("Arial", 20)).pack(pady=10)
+text_entry = CTkEntry(root, width=300) 
+text_entry.pack(pady=20)
 
 
 # Button to trigger image generation
-generate_button = tk.Button(root, text="Generate Image", command=on_generate_button_click)
+generate_button = CTkButton(root, text="Convert Text", corner_radius=32, fg_color="#C850C0", hover_color="#4158D0", command=on_generate_button_click)
 generate_button.pack()
 
 
